@@ -1,768 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odisha Police - Cyber Training</title>
-    <style>
-        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background: #eef2f5; }
-        .container { max-width: 1000px; margin: 20px auto; background: white; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-radius: 8px; }
-        .slide { border-bottom: 2px solid #ddd; padding: 30px 0; }
-        .title-slide, .end-slide { text-align: center; padding: 80px 20px; background: #002147; color: white; border-radius: 10px; margin-bottom: 40px; }
-        h1 { color: #002147; font-size: 2.2rem; margin-bottom: 20px; }
-        .title-slide h1, .end-slide h1 { color: #ffcc00; font-size: 3rem; border: none; }
-        h2 { color: #d32f2f; font-size: 1.5rem; margin-top: 20px; border-left: 4px solid #d32f2f; padding-left: 10px; }
-        .module-header { background: #002147; color: white; padding: 15px; font-size: 1.8rem; font-weight: bold; margin-top: 50px; border-radius: 5px; text-align: center; }
-        ul { list-style-type: none; padding-left: 10px; }
-        li { margin-bottom: 10px; }
-        strong { color: #002147; font-weight: 700; }
-        p { margin: 5px 0; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Resource Moved</title>
+
+<!-- Auto Redirect after 10 seconds -->
+<meta http-equiv="refresh" content="10;url=https://dibakardas.in">
+
+<style>
+body {
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#0b1225;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+    text-align:center;
+}
+
+.container {
+    max-width:520px;
+    padding:40px;
+}
+
+h1 {
+    color:#d4a82a;
+    margin-bottom:20px;
+}
+
+p {
+    color:#ccc;
+    font-size:16px;
+    line-height:1.6;
+}
+
+.countdown {
+    margin-top:15px;
+    font-size:14px;
+    color:#aaa;
+}
+
+a {
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 22px;
+    background:#d4a82a;
+    color:#000;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:6px;
+    transition:0.2s;
+}
+
+a:hover {
+    background:#f5cc50;
+}
+</style>
 </head>
+
 <body>
 
 <div class="container">
-    <div class="title-slide">
-        <h1>Training on Cyber Crime and Investigation</h1>
-        <hr style="width: 60%; border: 1px solid #ffcc00;">
-        <h2 style="color: white; border: none;">Organized by: Odisha Police</h2>
+    <h1>Resource Moved</h1>
+
+    <p>
+        This training material has been moved to our official website.
+    </p>
+
+    <p>
+        Please visit <strong>dibakardas.in</strong> and click on the <strong>Resources</strong> section to access it.
+    </p>
+
+    <div class="countdown">
+        Redirecting automatically in <span id="timer">10</span> seconds...
     </div>
 
-    <div class="module-header">Module 1: Network Fundamentals</div>
-
-    <div class="slide">
-        <h2>1. OSI Model (The "How Data Travels" Map)</h2>
-        <ul>
-            <li><strong>Full Form:</strong> Open Systems Interconnection Model.</li>
-            <li><strong>What it is:</strong> A 7-layer framework that describes how a message moves from a human tapping a screen to a signal traveling through a wire.</li>
-            <li><strong>Why it’s needed:</strong> It helps police identify where a crime occurred, was it a physical break-in (Layer 1) or a hacked WhatsApp account (Layer 7)?</li>
-            <li><strong>General Location:</strong> It is a conceptual "rulebook" used by every computer in the world.</li>
-            <li><strong>Investigation Location:</strong> When you seize a device, you look at Layer 7 logs (Application logs like WhatsApp, Instagram).</li>
-            <li><strong>How to read it:</strong> Layer 1 is the "Ground" (Cables) and Layer 7 is the "Top" (The App).</li>
-            <li><strong>Data Link (Layer 2):</strong> This is where the MAC Address lives; it connects the hardware to the local network.</li>
-            <li><strong>Network (Layer 3):</strong> This is where the IP Address lives; it helps the data find the right "digital house."</li>
-            <li><strong>Transport (Layer 4):</strong> This ensures the message arrives in the right order and isn't broken.</li>
-            <li><strong>The Analogy:</strong> Think of it like a courier service. Layer 1 is the road, Layer 3 is the address on the box, and Layer 7 is the letter inside.</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>2. IP Addresses (The "Digital House Number")</h2>
-        <ul>
-            <li><strong>Full Form:</strong> Internet Protocol Address.</li>
-            <li><strong>What it is:</strong> A unique string of numbers assigned to every device on a network.</li>
-            <li><strong>Why it’s needed:</strong> It is the first clue in any cybercrime. It tells you which internet connection was used to commit the act.</li>
-            <li><strong>General Location:</strong> Found in your phone’s "Network Settings" or by searching "What is my IP" on Google.</li>
-            <li><strong>Investigation Location:</strong> Found in the server logs of the victim (e.g., the IP address that logged into a stolen bank account).</li>
-            <li><strong>IPv4 Appearance:</strong> Four sets of numbers separated by dots (e.g., 103.45.2.11).</li>
-            <li><strong>IPv6 Appearance:</strong> Eight groups of letters and numbers (e.g., 2001:db8:0:0:0:ff00:42:8329).</li>
-            <li><strong>Public IP:</strong> The address the whole world sees (assigned by the ISP).</li>
-            <li><strong>Private IP:</strong> The address used inside a home/office (assigned by the local router).</li>
-            <li><strong>Key Insight:</strong> A Public IP identifies the house/office, while a Private IP identifies the specific device inside that house.</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>3. Static vs. Dynamic IPs (The "Changing Address")</h2>
-        <ul>
-            <li><strong>What it is:</strong> Static means the IP never changes. Dynamic means the IP changes every time the user restarts their phone or router.</li>
-            <li><strong>Why it’s needed:</strong> To understand why an IP address you found yesterday might belong to a different person today.</li>
-            <li><strong>The Indian Context:</strong> Most mobile users in India (JIO, Airtel) use Dynamic IPs to save resources.</li>
-            <li><strong>Investigation Challenge:</strong> If you track a Dynamic IP without a timestamp, you might arrest the wrong person.</li>
-            <li><strong>Static Use Case:</strong> Usually used by big companies, banks, or police headquarters so their servers are always easy to find.</li>
-            <li><strong>Lease Time:</strong> In Dynamic IPs, a user "rents" an IP for a few hours. This is called a Lease.</li>
-            <li><strong>General Location:</strong> This setting is managed by the ISP's main server.</li>
-            <li><strong>Investigation Location:</strong> Found in the Radius Logs or DHCP Logs of the Telecom Company.</li>
-            <li><strong>How to read it:</strong> Look for the "Allocation Time" and "Release Time" in the ISP report.</li>
-            <li><strong>Critical Step:</strong> Always ask the ISP: "Who was using this IP at exactly 14:05:10 IST on Oct 12?"</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>4. MAC Address (The "Hardware Fingerprint")</h2>
-        <ul>
-            <li><strong>Full Form:</strong> Media Access Control Address.</li>
-            <li><strong>What it is:</strong> A permanent, physical ID number burned into the Wi-Fi or Ethernet chip of a device at the factory.</li>
-            <li><strong>Why it’s needed:</strong> Even if a suspect changes their IP or SIM card, the MAC address of the laptop/phone remains the same.</li>
-            <li><strong>General Location:</strong> On a sticker at the back of a laptop or under the "About Phone" menu.</li>
-            <li><strong>Investigation Location:</strong> Found in the logs of the Wi-Fi router used by the suspect.</li>
-            <li><strong>How it looks:</strong> Six pairs of characters (e.g., 00:0A:95:9D:68:16).</li>
-            <li><strong>NIC (Network Interface Card):</strong> The physical part inside the phone that has the MAC address.</li>
-            <li><strong>Manufacturer Clue:</strong> The first three pairs (e.g., 00:0A:95) tell you which company made the device (Apple, Samsung, etc.).</li>
-            <li><strong>Spoofing:</strong> Tech-savvy criminals can "fake" a MAC address using software, though the physical one stays the same.</li>
-            <li><strong>Evidence Value:</strong> Linking a MAC address found in a crime scene router to a laptop found in a suspect’s house is a "smoking gun."</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>5. DHCP Logs (The "Record Book")</h2>
-        <ul>
-            <li><strong>Full Form:</strong> Dynamic Host Configuration Protocol Logs.</li>
-            <li><strong>What it is:</strong> A digital diary kept by a router or ISP that records which IP was given to which device.</li>
-            <li><strong>Why it’s needed:</strong> It is the bridge that connects an IP Address to a MAC Address.</li>
-            <li><strong>General Location:</strong> Inside the memory of a Wi-Fi router or the ISP's database.</li>
-            <li><strong>Investigation Location:</strong> You seize the router from a suspect’s house and download these logs.</li>
-            <li><strong>How to read it:</strong> It looks like a spreadsheet with columns for "Time," "MAC Address," and "Assigned IP."</li>
-            <li><strong>Reservation:</strong> Sometimes a router is set to always give the same IP to the "Boss’s Laptop." This is a "DHCP Reservation."</li>
-            <li><strong>Scope:</strong> This is the range of IPs a router is allowed to give out (e.g., 192.168.1.2 to 192.168.1.100).</li>
-            <li><strong>Lease Duration:</strong> Tells you how long the suspect was connected to that specific Wi-Fi.</li>
-            <li><strong>Legal Use:</strong> These logs prove that Device A was present on Network B at Time C.</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>6. Subnetting & Gateway (The "Local Map")</h2>
-        <ul>
-            <li><strong>Subnetting:</strong> Dividing a large network into smaller "neighborhoods" (subnets).</li>
-            <li><strong>Gateway:</strong> The "Main Gate" or router that connects a local network to the internet.</li>
-            <li><strong>Why it’s needed:</strong> To narrow down where a suspect is. Are they in the "Accounting Subnet" or the "Guest Wi-Fi Subnet"?</li>
-            <li><strong>General Location:</strong> Found in the "Status" or "IP Config" settings of any computer.</li>
-            <li><strong>Investigation Location:</strong> Helps you find the physical router (Gateway) that needs to be seized.</li>
-            <li><strong>How it looks:</strong> A Subnet Mask usually looks like 255.255.255.0.</li>
-            <li><strong>The Gateway IP:</strong> Usually ends in .1 (e.g., 192.168.1.1). This is the router's internal address.</li>
-            <li><strong>Public Gateway:</strong> For an ISP, this is the "Tower" or "Exchange" the user is connected to.</li>
-            <li><strong>IP Conflict:</strong> If two devices have the same IP on one subnet, the internet stops working—a clue that a new device just joined.</li>
-            <li><strong>Officer’s Goal:</strong> Find the Gateway IP to find the physical hardware controlling the traffic.</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>7. IMEI vs. IMSI (The "Phone vs. SIM")</h2>
-        <ul>
-            <li><strong>IMEI Full Form:</strong> International Mobile Equipment Identity.</li>
-            <li><strong>IMSI Full Form:</strong> International Mobile Subscriber Identity.</li>
-            <li><strong>IMEI (The Phone):</strong> A 15-digit number unique to the handset. It doesn't change if you change the SIM.</li>
-            <li><strong>IMSI (The SIM):</strong> A 15-digit number unique to the SIM card/Subscriber. It travels with the SIM to new phones.</li>
-            <li><strong>Why it’s needed:</strong> To track a person even if they switch phones (track IMSI) or switch SIMs (track IMEI).</li>
-            <li><strong>General Location:</strong> IMEI: Dial *#06# or check the box. IMSI: Stored inside the SIM card.</li>
-            <li><strong>Investigation Location:</strong> Found in CDRs (Call Detail Records) provided by companies like JIO/Airtel.</li>
-            <li><strong>How to read:</strong> IMEI usually starts with 35... or 86.... IMSI in India usually starts with 404 or 405.</li>
-            <li><strong>Blacklisting:</strong> If a phone is stolen, the police "Blacklist" the IMEI so no SIM card will work in it.</li>
-            <li><strong>The Link:</strong> Every time a call is made, the tower records BOTH. This links a specific person to a specific handset.</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>8. Cell Tower Triangulation (The "Search Area")</h2>
-        <ul>
-            <li><strong>What it is:</strong> Using the signal strength from 3 or more towers to calculate a suspect's location.</li>
-            <li><strong>Why it’s needed:</strong> To find a suspect’s live location even if they have turned off GPS/Location services.</li>
-            <li><strong>How it works:</strong> The phone is always "talking" to the nearest towers to stay connected.</li>
-            <li><strong>Accuracy:</strong> In cities (many towers), it is very accurate (within 50-100 meters). In villages, it may only be within 2-3 kilometers.</li>
-            <li><strong>General Location:</strong> Only accessible by the Telecom Service Provider (TSP).</li>
-            <li><strong>Investigation Location:</strong> You receive a Cell Site Map from the TSP.</li>
-            <li><strong>Azimuth/Sector:</strong> Towers have three sides (sectors). The log tells you which "side" of the tower the suspect was on.</li>
-            <li><strong>Timing Advance (TA):</strong> A value that tells you exactly how many meters the suspect was from the tower.</li>
-            <li><strong>Handover:</strong> When a suspect is moving in a car, they "handover" from one tower to another. This shows their direction of travel.</li>
-            <li><strong>Evidence:</strong> Used to prove a suspect was "present at the crime scene" at the time of the incident.</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>9. Wi-Fi SSID & BSSID (The "Wireless Clues")</h2>
-        <ul>
-            <li><strong>SSID Full Form:</strong> Service Set Identifier (The name you see, like "Home_WiFi").</li>
-            <li><strong>BSSID Full Form:</strong> Basic Service Set Identifier (The MAC address of that specific router).</li>
-            <li><strong>Why it’s needed:</strong> A suspect can name their Wi-Fi "Police_Station" (SSID) to prank people, but the BSSID will always be a unique serial number.</li>
-            <li><strong>General Location:</strong> Visible on any phone when searching for Wi-Fi.</li>
-            <li><strong>Investigation Location:</strong> Check the "Saved Networks" on a suspect's seized phone. It shows everywhere they have been.</li>
-            <li><strong>BSSID Mapping:</strong> Websites like Wigle.net keep a global map of BSSIDs. You can search a BSSID and see exactly where that router is located.</li>
-            <li><strong>Public Hotspots:</strong> If a crime was committed using "Railway_Free_WiFi," the BSSID tells you exactly which platform the suspect was standing on.</li>
-            <li><strong>Hidden SSID:</strong> Some criminals hide their Wi-Fi name. You need special tools (like Wireshark) to see these.</li>
-            <li><strong>RSSI:</strong> This is the signal strength. A high RSSI means the suspect was standing very close to the router.</li>
-            <li><strong>Evidence Value:</strong> Proves the suspect's device was connected to a specific router at a specific location.</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>10. VPN / Proxy Mechanics (The "Mask")</h2>
-        <ul>
-            <li><strong>Full Form:</strong> Virtual Private Network.</li>
-            <li><strong>What it is:</strong> An app that creates an encrypted "tunnel." It hides your real Indian IP and replaces it with a foreign IP (e.g., USA).</li>
-            <li><strong>Why it’s needed:</strong> To understand why a "Threat Mail" appears to come from New York when the suspect is in Mumbai.</li>
-            <li><strong>Proxy vs. VPN:</strong> A Proxy only hides your IP for one app (like a browser). A VPN hides everything on the phone.</li>
-            <li><strong>The "Middle-Man":</strong> The data goes Suspect -> VPN Server -> Internet. The internet only sees the VPN Server's IP.</li>
-            <li><strong>Logs:</strong> Most VPNs claim "No-Logs" policy, making it very hard for police to get the real IP.</li>
-            <li><strong>General Location:</strong> Look for apps like NordVPN, ExpressVPN, or "Turbo Proxy" on the suspect’s phone.</li>
-            <li><strong>Investigation Clue:</strong> If you see an IP address belonging to "Amazon Data Center" or "Google Cloud" instead of a home ISP, it is likely a VPN/Proxy.</li>
-            <li><strong>Encryption:</strong> VPNs scramble the data. Even if you intercept the Wi-Fi signal, you can’t read the messages.</li>
-            <li><strong>Officer’s Strategy:</strong> If a VPN is used, look for "Physical Evidence" (like a logged-in session on a laptop) rather than trying to track the IP through the foreign VPN company.</li>
-        </ul>
-    </div>
-
-    <div class="module-header">Module 2: Web & Domain Investigation</div>
-
-    <div class="slide">
-        <h2>1. DNS (Domain Name System)</h2>
-        <ul>
-            <li><strong>What it is:</strong> The "Phonebook of the Internet." It translates human names (google.com) into computer numbers (142.250.190.46).</li>
-            <li><strong>Why it’s needed:</strong> If you have a scam website name, DNS records tell you which IP address it is currently pointing to.</li>
-            <li><strong>A-Record:</strong> The most common record; it maps the domain name directly to an IPv4 address.</li>
-            <li><strong>CNAME:</strong> An alias record. It shows if "https://www.google.com/search?q=scam-site.com" is actually just a mask for another hidden website.</li>
-            <li><strong>MX-Record:</strong> Shows the "Mail Exchange" server. This tells you which service the criminal is using to send emails.</li>
-            <li><strong>NS-Record:</strong> "Name Server" records show which company is managing the website's directions (e.g., Cloudflare or GoDaddy).</li>
-            <li><strong>DNS Cache:</strong> Computers "remember" DNS for a while. Even if a criminal deletes a site, the "cache" might still show the old IP.</li>
-            <li><strong>General Location:</strong> Publicly available through "DNS Lookup" tools online.</li>
-            <li><strong>Investigation Use:</strong> If a site is taken down, you look at "Historical DNS" to see where it used to be hosted.</li>
-            <li><strong>How to read it:</strong> Domain: scam.com -> Points to IP: 1.2.3.4.</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>2. WHOIS Lookup</h2>
-        <ul>
-            <li><strong>What it is:</strong> A public database query that asks, "Who owns this domain?"</li>
-            <li><strong>Why it’s needed:</strong> To find the name, email, and phone number of the person who bought the website.</li>
-            <li><strong>Privacy Protection:</strong> Many criminals use "WhoisGuard" or "Privacy Protect" to hide their real name in public results.</li>
-            <li><strong>Data Included:</strong> Registration date, Expiry date, and the "Registrar" (the shop where they bought it).</li>
-            <li><strong>Technical Contact:</strong> Often shows the email of the person who set up the site—a major lead for police.</li>
-            <li><strong>Creation Date:</strong> If a banking site was created only 2 days ago, it is almost certainly a fake/phishing site.</li>
-            <li><strong>General Location:</strong> Websites like whois.com or centralops.net.</li>
-            <li><strong>Investigation Location:</strong> If details are hidden, you must send a legal notice to the Registrar to get the "Underlying Subscriber Info."</li>
-            <li><strong>Updated Date:</strong> Shows when the criminal last changed their settings or renewed the site.</li>
-            <li><strong>How to read it:</strong> Look for the "Registrant Name" and "Registrant Email" fields.</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>3. Domain Registrars</h2>
-        <ul>
-            <li><strong>What it is:</strong> The "Shop" or "Company" where a person buys a domain name (e.g., GoDaddy, Namecheap, BigRock).</li>
-            <li><strong>Why it’s needed:</strong> They are the legal entity you send a notice to when you want to suspend/block a scam website.</li>
-            <li><strong>The Registry:</strong> Above the registrar is the Registry (like Verisign for .com). Registrars are the middle-men.</li>
-            <li><strong>Abuse Contact:</strong> Every registrar has an "abuse@" email address specifically for police to report scams.</li>
-            <li><strong>KYC:</strong> Registrars keep credit card or PayPal details of the buyer. This is how you find the money trail.</li>
-            <li><strong>Country of Origin:</strong> If a site is registered with a Russian registrar, it is harder for Indian police to get data than with an Indian registrar.</li>
-            <li><strong>Resellers:</strong> Sometimes a small shop sells a domain through a big company. You have to trace the chain.</li>
-            <li><strong>General Location:</strong> Found by looking at the "Registrar" field in a WHOIS lookup.</li>
-            <li><strong>Investigation Use:</strong> You ask them for the "Payment Method" used to buy the domain.</li>
-            <li><strong>Action:</strong> You can request a "Domain Freeze" so the criminal cannot move the site to another company.</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>4. Web Hosting (Shared vs. VPS)</h2>
-        <ul>
-            <li><strong>What it is:</strong> The "Digital Land" where the website's files (images, code, stolen data) are stored.</li>
-            <li><strong>Shared Hosting:</strong> Like an apartment building; many websites live on one server. Cheap and common for small scams.</li>
-            <li><strong>VPS (Virtual Private Server):</strong> Like a private townhouse; more control and harder to investigate because the criminal has "Admin" rights.</li>
-            <li><strong>Why it’s needed:</strong> The "Hosting Provider" holds the actual evidence (the stolen usernames/passwords).</li>
-            <li><strong>General Location:</strong> Identified by the IP address of the website.</li>
-            <li><strong>Investigation Use:</strong> You send a notice to the host to "Preserve Logs" and "Mirror the Image" (copy the files) for evidence.</li>
-            <li><strong>Server Logs:</strong> The host records every IP that visited the site—this helps you find the victim list.</li>
-            <li><strong>Physical Location:</strong> A site might be .in (India) but hosted on a server in the USA.</li>
-            <li><strong>Datacenters:</strong> Companies like AWS, Google Cloud, or DigitalOcean are common hosts.</li>
-            <li><strong>How to read it:</strong> Use a "Reverse IP Lookup" to see all other sites sharing that same server.</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>5. HTTP/HTTPS Headers</h2>
-        <ul>
-            <li><strong>What it is:</strong> Hidden "metadata" sent between a browser and a server during every visit.</li>
-            <li><strong>User-Agent:</strong> A header that reveals the suspect's Browser (Chrome/Safari) and OS (Windows 11/Android 14).</li>
-            <li><strong>Why it’s needed:</strong> It helps narrow down the device. If the log shows "iPhone 15," but the suspect only has a Nokia, you look for a hidden device.</li>
-            <li><strong>Referer:</strong> (Spelled with one 'r' in tech) Shows which website the user came from before hitting the current page.</li>
-            <li><strong>Server Header:</strong> Tells you what software the criminal's server is running (e.g., Apache or Nginx).</li>
-            <li><strong>Set-Cookie:</strong> Information the server puts on the suspect's phone to "remember" them.</li>
-            <li><strong>Investigation Use:</strong> If a criminal visits a "honey pot" (a trap site set by police), these headers identify their setup.</li>
-            <li><strong>X-Forwarded-For:</strong> A special header that can sometimes reveal a suspect's real IP even if they are using a proxy.</li>
-            <li><strong>General Location:</strong> Found using "Inspect Element" in a browser or through network interception.</li>
-            <li><strong>How to read it:</strong> User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)...</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>6. SSL/TLS Certificates</h2>
-        <ul>
-            <li><strong>What it is:</strong> The "Green Padlock" (HTTPS) that encrypts data.</li>
-            <li><strong>Why it’s needed:</strong> To check if a site is "Validated." Scammers often use free certificates (like Let's Encrypt).</li>
-            <li><strong>Full Form:</strong> Secure Sockets Layer / Transport Layer Security.</li>
-            <li><strong>Issuer:</strong> The company that gave the certificate. If "State Bank" site is issued by "FreeSSL-Now," it is a fake.</li>
-            <li><strong>Validity Period:</strong> Certificates usually last 90 days or 1 year. Scams have very recent "Start Dates."</li>
-            <li><strong>Subject Alternative Name (SAN):</strong> Shows other websites owned by the same certificate holder—helping you find a "network" of scam sites.</li>
-            <li><strong>General Location:</strong> Click the padlock icon in the browser address bar.</li>
-            <li><strong>Investigation Use:</strong> If you find a certificate serial number, you can ask the issuer for the account details of the person who requested it.</li>
-            <li><strong>Fingerprint:</strong> A unique code (SHA-256) for that certificate. You can search this code to find other identical fake sites.</li>
-            <li><strong>Misconception:</strong> "HTTPS" does not mean a site is safe; it just means the connection is private. Even a thief can have a padlock on their door.</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>7. URL Shorteners</h2>
-        <ul>
-            <li><strong>What it is:</strong> Services that turn long links into tiny ones (e.g., bit.ly/xxxx).</li>
-            <li><strong>Why it’s needed:</strong> Criminals use them to hide the "https://www.google.com/search?q=scam-site.com" name in SMS/WhatsApp messages.</li>
-            <li><strong>De-masking:</strong> You can see the real destination by adding a + sign at the end of many shortened links (e.g., bit.ly/xxxx+).</li>
-            <li><strong>Analytics:</strong> Most shorteners keep public stats on how many people clicked and from which country.</li>
-            <li><strong>Investigation Use:</strong> You contact the service (like Bitly or TinyURL) to get the IP address of the person who created the link.</li>
-            <li><strong>Redirection:</strong> The link sends the user to the destination, but the "Shortener" records the click first.</li>
-            <li><strong>Custom Branded Links:</strong> Some companies use their own (e.g., amzn.to for Amazon). If a link looks "weird," it is likely a scam.</li>
-            <li><strong>General Location:</strong> Found in the body of phishing SMS or emails.</li>
-            <li><strong>Phishing Prevention:</strong> Many shorteners will block a link if it is reported as a scam.</li>
-            <li><strong>How to read it:</strong> It's just a 5-7 character code after a domain name.</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>8. ICANN Protocols</h2>
-        <ul>
-            <li><strong>Full Form:</strong> Internet Corporation for Assigned Names and Numbers.</li>
-            <li><strong>What it is:</strong> The global "Government" of the internet that sets rules for domains.</li>
-            <li><strong>Why it’s needed:</strong> When a criminal uses a .com or .net domain, they must follow ICANN's "Registrant Agreement."</li>
-            <li><strong>UDRP:</strong> (Uniform Domain-Name Dispute-Resolution Policy) A process to take back a domain if someone is impersonating a brand (like sbi-bank-login.com).</li>
-            <li><strong>Whois Accuracy:</strong> ICANN rules state that if a user provides "False WHOIS data," the registrar must cancel the domain.</li>
-            <li><strong>Police Role:</strong> You can use ICANN's "Accuracy Complaint" to get a scam site taken down quickly if the owner's info is fake.</li>
-            <li><strong>Global Jurisdiction:</strong> ICANN is based in the USA, but its rules apply to all registrars worldwide.</li>
-            <li><strong>General Location:</strong> Rules are found on icann.org.</li>
-            <li><strong>GNSO:</strong> The group within ICANN that makes rules for generic domains (like .com).</li>
-            <li><strong>Key Insight:</strong> ICANN doesn't remove "Content" (like a bad video), they only handle "Domains" (the name).</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>9. Robots.txt & Sitemap</h2>
-        <ul>
-            <li><strong>Robots.txt:</strong> A file that tells Google which parts of a website not to show in search results.</li>
-            <li><strong>Sitemap:</strong> A "List of Contents" for the website meant for search engines.</li>
-            <li><strong>Why it’s needed:</strong> Criminals often hide their "Admin Panel" or "Stolen Data Folder" in the robots.txt so the public can't find it via Google.</li>
-            <li><strong>Investigation Use:</strong> By reading these files, you can find hidden pages like /admin/login or /uploads/stolen_cards/.</li>
-            <li><strong>General Location:</strong> Found by adding it to the end of a URL (e.g., scam-site.com/robots.txt).</li>
-            <li><strong>How to read it:</strong> Look for the word Disallow:. Whatever follows it is a hidden folder.</li>
-            <li><strong>Sitemap XML:</strong> Usually found at scam-site.com/sitemap.xml. It lists every single page on the site.</li>
-            <li><strong>Manual Discovery:</strong> Sometimes criminals forget to protect these folders, allowing police to download all evidence without a password.</li>
-            <li><strong>Clues:</strong> A sitemap might show the date and time each page was created, helping build a timeline of the crime.</li>
-            <li><strong>Observation:</strong> If a site has no robots.txt or sitemap, it might be a very crude, "hit-and-run" scam.</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>10. CDN (Content Delivery Networks)</h2>
-        <ul>
-            <li><strong>What it is:</strong> A service like Cloudflare that acts as a "Shield" for a website.</li>
-            <li><strong>Why it’s needed:</strong> It speeds up the site but also hides the true IP address of the server.</li>
-            <li><strong>The "Mask":</strong> When you ping a Cloudflare-protected site, you see Cloudflare's IP, not the criminal's IP.</li>
-            <li><strong>Direct-IP Attack:</strong> Investigation goal is to find the "Origin IP" (the real server hiding behind the shield).</li>
-            <li><strong>Cloudflare Resolver:</strong> Tools that look for "leaks" where the server accidentally revealed its real IP.</li>
-            <li><strong>Legal Notice:</strong> You must send a notice to Cloudflare asking for the "Origin IP" and "Payment Details."</li>
-            <li><strong>WAF:</strong> (Web Application Firewall) CDNs provide this to block police "scanning" tools.</li>
-            <li><strong>General Location:</strong> Identified if the Name Servers (NS) are ashley.ns.cloudflare.com or similar.</li>
-            <li><strong>Investigation Challenge:</strong> Criminals love CDNs because they provide a "free" layer of anonymity.</li>
-            <li><strong>How to read it:</strong> If the IP lookup says "Organization: Cloudflare Net," you know the real host is hidden</li>
-        </ul>
-    </div>
-
-    <div class="module-header">Module 3: Telecom Records & Field Evidence</div>
-
-    <div class="slide">
-        <h2>1. CDR (Call Detail Record)</h2>
-        <ul>
-            <li><strong>Full Form:</strong> Call Detail Record.</li>
-            <li><strong>What it is:</strong> A digital log of every call and SMS sent or received by a specific mobile number.</li>
-            <li><strong>Why it’s needed:</strong> To establish a relationship between suspects. It proves who talked to whom, for how long, and how often.</li>
-            <li><strong>General Location:</strong> Stored in the TSP’s main billing and network servers.</li>
-            <li><strong>Investigation Location:</strong> You obtain this by sending a formal request to the Nodal Officer of the telecom company.</li>
-            <li><strong>Data Included:</strong> Caller number, Receiver number, Date, Time, Duration, and the Cell Tower ID used.</li>
-            <li><strong>What’s Missing:</strong> CDRs do not contain the audio recording of the call or the text content of an SMS.</li>
-            <li><strong>SMS Records:</strong> It shows the time an SMS was sent, but the "Duration" column will usually be "0" or "1".</li>
-            <li><strong>Pattern Analysis:</strong> High frequency of calls at odd hours (2 AM) between two numbers suggests a strong conspiracy.</li>
-            <li><strong>How to read it:</strong> It is usually an Excel sheet. Look for "A-Party" (the caller) and "B-Party" (the receiver).</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>2. IPDR (Internet Protocol Detail Record)</h2>
-        <ul>
-            <li><strong>Full Form:</strong> Internet Protocol Detail Record.</li>
-            <li><strong>What it is:</strong> A log of every time a mobile user connects to the internet.</li>
-            <li><strong>Why it’s needed:</strong> This is the most critical log for cybercrime. It maps a "Public IP" (found in a crime) back to a specific mobile number.</li>
-            <li><strong>The Link:</strong> If a hacker uses an IP at 10:00 AM, the IPDR tells you exactly which phone number was assigned that IP at that second.</li>
-            <li><strong>General Location:</strong> Maintained by the ISP/TSP for at least 2 years as per Govt. norms.</li>
-            <li><strong>Investigation Location:</strong> Requested from the TSP when you have an IP address but no phone number.</li>
-            <li><strong>Data Included:</strong> Mobile Number, Private IP, Public IP, Start Time, End Time, and often the MAC Address.</li>
-            <li><strong>Destination IP:</strong> Some IPDRs also show which website (Destination IP) the suspect visited (e.g., Facebook’s server IP).</li>
-            <li><strong>Data Volume:</strong> It shows how many MBs or GBs of data were uploaded or downloaded.</li>
-            <li><strong>How to read it:</strong> Look for the "Source IP" column and match it with the "Username/Mobile Number" column.</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>3. SDR (Subscriber Detail Record)</h2>
-        <ul>
-            <li><strong>Full Form:</strong> Subscriber Detail Record.</li>
-            <li><strong>What it is:</strong> The digital profile of the person who owns the SIM card.</li>
-            <li><strong>Why it’s needed:</strong> To get the name, address, and identity proof of the person holding the mobile number.</li>
-            <li><strong>General Location:</strong> The TSP’s customer database.</li>
-            <li><strong>Investigation Location:</strong> Requested alongside the CDR to identify the suspect’s name.</li>
-            <li><strong>Data Included:</strong> Name, Father’s Name, Permanent Address, Alternate Mobile Number, and Date of Activation.</li>
-            <li><strong>KYC Link:</strong> It contains the unique ID number of the document used (e.g., Aadhaar Number).</li>
-            <li><strong>Photo:</strong> The SDR usually includes the digital photo taken at the time of purchasing the SIM.</li>
-            <li><strong>Verification:</strong> Always check the "Alternate Number"—criminals often use their real number as an alternate for a fake SIM.</li>
-            <li><strong>How to read it:</strong> It looks like a profile page or a summary table of the user's personal details.</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>4. GPRS / Data Logs</h2>
-        <ul>
-            <li><strong>Full Form:</strong> General Packet Radio Service Logs.</li>
-            <li><strong>What it is:</strong> A record of when the "Mobile Data" toggle was switched ON or OFF on a phone.</li>
-            <li><strong>Why it’s needed:</strong> To prove if a suspect was "Online" during the time a digital crime (like a WhatsApp threat) was sent.</li>
-            <li><strong>General Location:</strong> Stored in the TSP’s data core network.</li>
-            <li><strong>Investigation Location:</strong> Often included as part of the IPDR or as a separate "Data Usage Report."</li>
-            <li><strong>Session Duration:</strong> It shows how long a single internet session lasted (e.g., 4 hours).</li>
-            <li><strong>APN (Access Point Name):</strong> Shows the setting used to connect (e.g., 'www' or 'internet').</li>
-            <li><strong>Volume:</strong> Shows if the user was just browsing (small data) or downloading heavy files/videos (large data).</li>
-            <li><strong>Roaming:</strong> Indicates if the data was used while the suspect was in a different state/circle.</li>
-            <li><strong>How to read it:</strong> Look for "Upload Bytes" and "Download Bytes" to see the level of activity.</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>5. Tower Dumps</h2>
-        <ul>
-            <li><strong>What it is:</strong> A list of every mobile number that connected to a specific cell tower during a specific time window.</li>
-            <li><strong>Why it’s needed:</strong> If a murder happens in a park at 9 PM, you pull the "Tower Dump" to see which phones were present in that park at that time.</li>
-            <li><strong>General Location:</strong> Telecom Tower logs.</li>
-            <li><strong>Investigation Location:</strong> You provide the Cell ID (from a victim’s CDR) and a time range (e.g., 8 PM to 10 PM) to the TSP.</li>
-            <li><strong>Analysis:</strong> You compare dumps from different locations. If "Number X" appears at the victim’s house AND the disposal site, that’s your suspect.</li>
-            <li><strong>Data Size:</strong> These files are huge, often containing thousands of numbers.</li>
-            <li><strong>Filter:</strong> You can filter by "Entry" and "Exit" to see who arrived just before the crime and left immediately after.</li>
-            <li><strong>Identity:</strong> Once you find a suspicious number in the dump, you then request the SDR for that number.</li>
-            <li><strong>Limitations:</strong> It won't show people whose phones were switched off or in Airplane Mode.</li>
-            <li><strong>How to read it:</strong> Usually a massive Excel CSV file with columns for "Mobile Number" and "Time of Connection."</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>6. CAF (Customer Application Form)</h2>
-        <ul>
-            <li><strong>Full Form:</strong> Customer Application Form.</li>
-            <li><strong>What it is:</strong> The physical or digital form filled out by the customer at the mobile shop.</li>
-            <li><strong>Why it’s needed:</strong> It contains the Physical Signature of the suspect and the address of the shop where the SIM was bought.</li>
-            <li><strong>General Location:</strong> Scanned copies are kept in the TSP’s digital archives; physical copies are in their warehouses.</li>
-            <li><strong>Investigation Location:</strong> Requested when you suspect the SIM was bought using a fake ID (you can check the handwriting/signature).</li>
-            <li><strong>Point of Sale (PoS):</strong> The form shows the "Retailer Code." You can visit that shop to check CCTV or interview the shopkeeper.</li>
-            <li><strong>Date of Sale:</strong> Helps verify if the SIM was pre-activated (illegal) or bought specifically for the crime.</li>
-            <li><strong>Proof of Address (PoA):</strong> Shows the actual photocopy of the ID card (Aadhaar/Voter ID) submitted.</li>
-            <li><strong>Digital CAF (e-CAF):</strong> Modern forms use biometric (thumbprint) authentication, which is harder to forge.</li>
-            <li><strong>How to read it:</strong> It’s a scanned image of the document the suspect touched and signed.</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>7. MNP History</h2>
-        <ul>
-            <li><strong>Full Form:</strong> Mobile Number Portability History.</li>
-            <li><strong>What it is:</strong> A record of whether a phone number was moved from one provider to another (e.g., Airtel to Jio).</li>
-            <li><strong>Why it’s needed:</strong> If you send a request to Airtel but the user ported to Jio, Airtel will have no recent data.</li>
-            <li><strong>General Location:</strong> A central database managed by MNP Interconnection companies.</li>
-            <li><strong>Investigation Location:</strong> You can check this instantly using online "HLR Lookup" tools or by asking any TSP.</li>
-            <li><strong>Porting Date:</strong> Tells you when the service changed.</li>
-            <li><strong>UPC (Unique Porting Code):</strong> The code generated to switch networks—this can sometimes be used to track the request source.</li>
-            <li><strong>Network Circle:</strong> Confirms if the number belongs to "Delhi," "Maharashtra," etc., even after porting.</li>
-            <li><strong>Investigative Tip:</strong> If a suspect ports their number frequently, they may be trying to confuse law enforcement.</li>
-            <li><strong>How to read it:</strong> It usually says "Original Network: Vi | Current Network: Jio | Ported on: 12-Jan-2024."</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>8. SMS Headers (The Phishing Clue)</h2>
-        <ul>
-            <li><strong>What it is:</strong> The 6-character alphabetic code that appears instead of a number (e.g., AD-HDFCBK).</li>
-            <li><strong>Why it’s needed:</strong> To identify the "Bulk SMS Gateway" used by scammers to send fake bank alerts or OTP scams.</li>
-            <li><strong>Full Form:</strong> Not a specific full form, but often referred to as a "Sender ID."</li>
-            <li><strong>General Location:</strong> Regulated by TRAI in India under the DLT (Distributed Ledger Technology) system.</li>
-            <li><strong>Investigation Location:</strong> You look at the victim’s phone. The header (e.g., BZ-VICTIM) tells you which company sent it.</li>
-            <li><strong>Structure:</strong> The first letter (B) is the TSP (BSNL), the second (Z) is the city (Mumbai). The rest is the company name.</li>
-            <li><strong>Tracing:</strong> You contact the TSP to find which "Telemarketer" is registered to use that specific header.</li>
-            <li><strong>DLT Platform:</strong> Every header must be registered. You can find the owner of a header through the TRAI portal.</li>
-            <li><strong>Content Templates:</strong> Scammers often hijack "approved templates" to make their fake SMS look real.</li>
-            <li><strong>How to read it:</strong> XY-ABCDEF. X=Service Provider, Y=Service Area, ABCDEF=Sender Name.</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>9. VoIP Tracing (WhatsApp/Skype Calls)</h2>
-        <ul>
-            <li><strong>Full Form:</strong> Voice over Internet Protocol.</li>
-            <li><strong>What it is:</strong> Calls made using the internet instead of traditional cellular lines.</li>
-            <li><strong>Why it’s needed:</strong> Criminals use WhatsApp or Telegram calls because they are encrypted and don't show up in a standard CDR.</li>
-            <li><strong>The Challenge:</strong> A standard CDR will only show "Data Usage," not the person the suspect talked to on WhatsApp.</li>
-            <li><strong>Investigation Location:</strong> You must request data from the App Provider (Meta for WhatsApp) using an LER (Law Enforcement Request).</li>
-            <li><strong>IP Evidence:</strong> VoIP calls leave "IP logs." You can see the IP address the suspect was connected to during the call.</li>
-            <li><strong>Virtual Numbers:</strong> Criminals use apps to get "USA Numbers" (+1) to make VoIP calls while sitting in India.</li>
-            <li><strong>Gateway Tracing:</strong> If a VoIP call is "terminated" on a landline, it goes through a gateway that can be traced.</li>
-            <li><strong>Wi-Fi Link:</strong> If the VoIP call was made over Wi-Fi, the router’s logs will show the connection to the VoIP server.</li>
-            <li><strong>How to read it:</strong> In a CDR, VoIP looks like a long "GPRS Session" with no B-Party number.</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>10. IMSI Catchers (The "Fake Tower")</h2>
-        <ul>
-            <li><strong>What it is:</strong> A device (often called a "Stingray") that acts like a fake cell tower to trick nearby phones into connecting to it.</li>
-            <li><strong>Why it’s needed (Knowledge):</strong> To understand how advanced criminals or foreign spies might intercept calls or locate a person without TSP help.</li>
-            <li><strong>How it works:</strong> It sends a stronger signal than the real tower. Phones automatically connect to the strongest signal.</li>
-            <li><strong>Data Interception:</strong> Once connected, the catcher can see the IMSI and IMEI of every phone in the area.</li>
-            <li><strong>Investigation Use:</strong> Police use these (with high-level permission) to find a specific suspect in a crowded building.</li>
-            <li><strong>The Red Flag:</strong> If many people in one area complain of "dropped calls" or their "4G falling to 2G," an IMSI catcher might be nearby.</li>
-            <li><strong>Detection:</strong> Special "Network Monitor" apps can sometimes detect if a tower is fake (it will have no "Neighboring Cell" info).</li>
-            <li><strong>Legal Status:</strong> Use of these is highly restricted and usually requires Home Ministry clearance.</li>
-            <li><strong>Encrypted Apps:</strong> Even an IMSI catcher cannot easily read messages from WhatsApp or Signal because they are encrypted end-to-end.</li>
-            <li><strong>How it looks:</strong> It is a physical hardware box with antennas, often hidden in a vehicle or a briefcase.</li>
-        </ul>
-    </div>
-
-    <div class="module-header">Module 4: Social Media & OSINT</div>
-
-    <div class="slide">
-        <h2>1. Facebook/Instagram LEO Portals</h2>
-        <ul>
-            <li><strong>Full Form:</strong> Law Enforcement Online Portal.</li>
-            <li><strong>What it is:</strong> A secure, "cops-only" website where police submit legal requests directly to Meta (the company that owns FB/Instagram).</li>
-            <li><strong>Why it’s needed:</strong> To get private data like IP addresses, login history, and linked phone numbers that aren't visible on a public profile.</li>
-            <li><strong>General Location:</strong> facebook.com/records. You must register using your official gov.in or nic.in email ID.</li>
-            <li><strong>Emergency Requests:</strong> The portal has a "Life Safety" option for kidnappings or suicide threats to get data in minutes instead of weeks.</li>
-            <li><strong>Data Provided:</strong> Includes "Basic Subscriber Info" (Name, Email, Phone, Registration Date).</li>
-            <li><strong>Preservation:</strong> You can click "Preserve" to tell Meta to save a suspect's data for 90 days while you get a court order.</li>
-            <li><strong>Investigation Use:</strong> Proving that the person who posted a threat is the same person who owns the mobile number.</li>
-            <li><strong>How it looks:</strong> A dashboard where you upload your signed Section 91 (or BNSS 94) notice as a PDF.</li>
-            <li><strong>The Key:</strong> Meta will only talk to you through this portal; they rarely respond to random emails.</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>2. X (Twitter) Advanced Search</h2>
-        <ul>
-            <li><strong>What it is:</strong> A powerful search tool that filters tweets by date, location, and specific words.</li>
-            <li><strong>Why it’s needed:</strong> To find a suspect's deleted "history" or old conversations they forgot they had years ago.</li>
-            <li><strong>The Logic:</strong> You can search for: (from:SuspectUser) until:2020-01-01 to see their old mindset.</li>
-            <li><strong>Mentions:</strong> You can see who the suspect talked to most by searching to:SuspectUser.</li>
-            <li><strong>Location:</strong> Accessible via the "three dots" next to the search bar on X.com or twitter.com/search-advanced.</li>
-            <li><strong>Incriminating Tweets:</strong> Criminals often delete evidence, but "replies" from other people usually stay visible.</li>
-            <li><strong>Media Search:</strong> You can filter for only "Videos" or "Photos" posted by a suspect in a specific city.</li>
-            <li><strong>Investigation Use:</strong> Building a "Timeline" of a suspect's radicalization or criminal planning.</li>
-            <li><strong>Archiving:</strong> Once you find a tweet, take a screenshot immediately or use a tool to save the link.</li>
-            <li><strong>How to read it:</strong> It looks like a standard search but gives you much more specific results.</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>3. Telegram Bot Analysis</h2>
-        <ul>
-            <li><strong>What it is:</strong> Automated programs inside Telegram that can "sell" data, leak phone numbers, or spread malware.</li>
-            <li><strong>Why it’s needed:</strong> Many Indian "Data Leaks" (Aadhaar/Voter ID) are sold via these bots for a few rupees.</li>
-            <li><strong>BotFather:</strong> The main system that creates these bots. If you catch a suspect's phone, look for "BotFather" in their chats.</li>
-            <li><strong>API Key:</strong> The "Secret Code" that controls the bot. If you find this key, you can control the bot.</li>
-            <li><strong>Payment Logs:</strong> Many bots use "Crypto" or "UPI" for payments. This is a major lead.</li>
-            <li><strong>Command History:</strong> Bots respond to commands like /start or /search. Check what commands the suspect sent.</li>
-            <li><strong>Scraping:</strong> Some bots are used to "scrape" (steal) contact lists from unsuspecting users.</li>
-            <li><strong>Investigation Location:</strong> Found by searching the "Global Search" in Telegram for keywords like "Data Leak" or "OTP Bypass."</li>
-            <li><strong>Anonymous:</strong> Telegram is very hard to get data from, so the "Bot" itself is often your only evidence.</li>
-            <li><strong>How to read it:</strong> It looks like a chat window with a "Start" button at the bottom.</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>4. WhatsApp Metadata & "First Originator"</h2>
-        <ul>
-            <li><strong>What it is:</strong> Metadata is "data about data"—who sent it, when, and to which group (not the content).</li>
-            <li><strong>First Originator:</strong> Under Indian IT Rules, WhatsApp must identify the person who first started a viral fake news message.</li>
-            <li><strong>Why it’s needed:</strong> To find the "Mastermind" of a riot or a scam, not just the people who forwarded it.</li>
-            <li><strong>Group Admins:</strong> The person who creates the group or has the power to add/remove members.</li>
-            <li><strong>The Challenge:</strong> WhatsApp is "End-to-End Encrypted," meaning you can't read the messages unless you have the physical phone.</li>
-            <li><strong>Web Sessions:</strong> Check if "WhatsApp Web" is active; this shows the suspect is using a PC to manage the scam.</li>
-            <li><strong>Investigation Use:</strong> In a seized phone, go to "Group Info" to see the "Created By" number and date.</li>
-            <li><strong>IP Logs:</strong> WhatsApp records the IP address used for every login.</li>
-            <li><strong>Status Updates:</strong> Don't forget to check "Status" history—suspects often post photos of their location or wealth there.</li>
-            <li><strong>Evidence:</strong> A screenshot is not enough; you need the digital "Hash Value" (a unique fingerprint) of the message.</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>5. Snapchat Geofilters & Snap Map</h2>
-        <ul>
-            <li><strong>What it is:</strong> A feature that shows a user's real-time location on a map or attaches a "city-specific" filter to a photo.</li>
-            <li><strong>Why it’s needed:</strong> Criminals love to "flex" (show off) their location. The Snap Map can show exactly which building they are in.</li>
-            <li><strong>Geofilter:</strong> If a suspect posts a photo with a "Connaught Place" filter, you know exactly where they were.</li>
-            <li><strong>"Our Story":</strong> Public photos posted to a location. If a crime happened at a protest, check "Our Story" for that area.</li>
-            <li><strong>Ghost Mode:</strong> If a suspect is smart, they turn this on to stay invisible on the map.</li>
-            <li><strong>Investigation Use:</strong> Tracking a runaway or a suspect by seeing where their "Bitmoji" icon is on the map.</li>
-            <li><strong>Retention:</strong> Snapchat deletes photos after viewing, but they keep metadata (logs) for a short time.</li>
-            <li><strong>Account Link:</strong> Snapchat is often linked to a "Bitmoji," which can reveal the suspect's physical appearance.</li>
-            <li><strong>How to read it:</strong> Open the Snap Map and look for "Heat Map" (blue/red spots) where many people are posting.</li>
-            <li><strong>Legal:</strong> Like Meta, Snapchat has a portal for police to request location history.</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>6. LinkedIn Scraping</h2>
-        <ul>
-            <li><strong>What it is:</strong> Extracting professional data (Job history, Education, Skills) from a LinkedIn profile.</li>
-            <li><strong>Why it’s needed:</strong> High-level fraudsters (Investment Scammers) often create fake "CEO" profiles to look trustworthy.</li>
-            <li><strong>Connections:</strong> Check who is "Endorsing" the suspect. These could be their partners in crime.</li>
-            <li><strong>Company Page:</strong> See if the company they claim to work for actually exists or has real employees.</li>
-            <li><strong>Profile History:</strong> LinkedIn tells you if a person changed their name recently.</li>
-            <li><strong>Email Discovery:</strong> Sometimes users put their email or phone number in the "About" or "Contact Info" section.</li>
-            <li><strong>Investigation Use:</strong> Identifying the real identity of a "Cyber Expert" or "Financial Advisor" who is actually a scammer.</li>
-            <li><strong>Premium View:</strong> Be careful—LinkedIn tells the user "Officer Raj saw your profile" unless you use a "Sock Puppet" (hidden) account.</li>
-            <li><strong>Search Filters:</strong> You can search for "Ex-Employees" of a scam company to find witnesses.</li>
-            <li><strong>How to read it:</strong> Treat it like a digital Resume.</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>7. Reverse Image Search</h2>
-        <ul>
-            <li><strong>What it is:</strong> Putting a photo into a search engine to find where else that same photo appears on the internet.</li>
-            <li><strong>Tools:</strong> Google Images, Yandex (great for faces), and PimEyes (scary-accurate facial recognition).</li>
-            <li><strong>Why it’s needed:</strong> To see if a suspect's profile picture is "Stolen" from a model or a real person's Instagram.</li>
-            <li><strong>The "Fake" Clue:</strong> If you search a "Girl's Profile Pic" and find it belongs to a Russian actress, the profile is a honey-trap.</li>
-            <li><strong>Original Source:</strong> It helps find the first time a photo was posted, which might lead to the suspect's real name.</li>
-            <li><strong>Location Finding:</strong> If a suspect posts a photo of a balcony, search the photo to see if it matches a specific hotel or building.</li>
-            <li><strong>Investigation Use:</strong> Identifying unidentified victims or unknown suspects from CCTV stills.</li>
-            <li><strong>General Location:</strong> images.google.com.</li>
-            <li><strong>EXIF Data:</strong> Some search engines can still read the hidden "Camera Data" in a photo (see point 11).</li>
-            <li><strong>How to do it:</strong> Right-click an image and select "Search Image with Google."</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>8. Social Media Header Analysis</h2>
-        <ul>
-            <li><strong>What it is:</strong> Checking the "Security Alerts" or "Login History" emails sent by social media apps.</li>
-            <li><strong>Why it’s needed:</strong> When a suspect logs into Instagram, Meta sends an email: "New Login from IP 1.2.3.4."</li>
-            <li><strong>Investigation Use:</strong> If you seize the suspect's email, you can find their IP address history without even talking to Instagram.</li>
-            <li><strong>Device Info:</strong> The header shows if they logged in from an "iPhone" or "Windows PC."</li>
-            <li><strong>Timestamp:</strong> It gives you the exact second of the login.</li>
-            <li><strong>Location Estimate:</strong> The email often says "Near Mumbai, India."</li>
-            <li><strong>General Location:</strong> Found in the "Security" or "Login Activity" tab of the app settings.</li>
-            <li><strong>Phishing Clue:</strong> If a victim says they were hacked, check these headers to see the hacker's IP.</li>
-            <li><strong>SMTP Logs:</strong> (See point 15) The email itself contains "Route" info of how it reached the inbox.</li>
-            <li><strong>How to read it:</strong> Look for the line that says Source IP or Logged in from.</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>9. Archiving Evidence (Wayback Machine)</h2>
-        <ul>
-            <li><strong>What it is:</strong> A "Time Machine" for the internet that saves copies of websites as they looked in the past.</li>
-            <li><strong>Full Form:</strong> Internet Archive (Wayback Machine).</li>
-            <li><strong>Why it’s needed:</strong> If a criminal deletes their website or a tweet after a crime, the Wayback Machine might have a "Snapshot" of it.</li>
-            <li><strong>Archive.is:</strong> A similar tool that is great for saving "Social Media" pages.</li>
-            <li><strong>Legal Value:</strong> Courts in India often accept archived links if you can prove they haven't been tampered with.</li>
-            <li><strong>Investigation Use:</strong> Proving a suspect did have a certain post on their profile yesterday.</li>
-            <li><strong>Frequency:</strong> Popular sites are archived every day; small scam sites might only be archived once.</li>
-            <li><strong>Manual Save:</strong> You can go to web.archive.org and paste a link to "Save this page now" for future evidence.</li>
-            <li><strong>General Location:</strong> archive.org or archive.is.</li>
-            <li><strong>How to read it:</strong> It shows a calendar. Click a blue circle on a specific date to see the old version of the site.</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>10. Sock Puppets (Undercover Profiles)</h2>
-        <ul>
-            <li><strong>What it is:</strong> A "Fake" but realistic social media account used by police to monitor suspects without them knowing.</li>
-            <li><strong>Why it’s needed:</strong> Suspects will block a profile that looks like a cop. They will accept a friend request from a "Regular Person."</li>
-            <li><strong>The "Persona":</strong> You must create a believable background (Interests, Friends, old posts).</li>
-            <li><strong>Safety:</strong> Never use your real phone number or real photo for a sock puppet.</li>
-            <li><strong>VPN:</strong> Always use a VPN when using a sock puppet so the suspect can't "IP Log" the police station.</li>
-            <li><strong>Burner Phone:</strong> Use a dedicated phone for these accounts.</li>
-            <li><strong>Investigation Use:</strong> Joining private Facebook groups or Telegram channels where illegal activity happens.</li>
-            <li><strong>Engagement:</strong> Do not "bait" or "trap" suspects into committing a crime they weren't going to do (Entrapment).</li>
-            <li><strong>Verification:</strong> Some platforms require a photo ID. This is where advanced OSINT skills are needed.</li>
-            <li><strong>Key Rule:</strong> A sock puppet is a tool for observation, not for personal use.</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>11. Video Metadata (GPS Extraction)</h2>
-        <ul>
-            <li><strong>What it is:</strong> Hidden data (EXIF) inside a video or photo file that records the exact GPS coordinates of where it was shot.</li>
-            <li><strong>Why it’s needed:</strong> To find a suspect's "Hideout" from a video they uploaded to TikTok or YouTube.</li>
-            <li><strong>The "Scrub":</strong> Most apps like WhatsApp and FB "scrub" (delete) this data when you upload.</li>
-            <li><strong>The Exception:</strong> If you find the original file on a suspect's phone or a cloud drive (Google Photos), the GPS is usually there.</li>
-            <li><strong>Tools:</strong> "ExifTool" or online "Metadata Viewers."</li>
-            <li><strong>Data Included:</strong> Camera model, Date/Time, and Latitude/Longitude.</li>
-            <li><strong>Investigation Use:</strong> Finding where a hostage video was filmed or where a drug stash is located.</li>
-            <li><strong>General Location:</strong> Right-click a file -> Properties -> Details.</li>
-            <li><strong>Google Maps:</strong> You can copy the Latitude/Longitude and paste them into Google Maps to see the house.</li>
-            <li><strong>How to read it:</strong> GPS: 28.6129, 77.2295.</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>12. Dark Web Navigation (Tor/Onion)</h2>
-        <ul>
-            <li><strong>What it is:</strong> A part of the internet that requires special software (Tor Browser) to access. Sites end in .onion.</li>
-            <li><strong>Why it’s needed:</strong> This is the "Black Market" of the internet. Drugs, weapons, and stolen data are sold here.</li>
-            <li><strong>Anonymity:</strong> Everything is encrypted and IPs are hidden through three layers of "Relays."</li>
-            <li><strong>Investigation Use:</strong> Monitoring "Leaked Databases" (like the recent BigBasket or Air India leaks) to see if Indian citizens' data is being sold.</li>
-            <li><strong>Marketplaces:</strong> Sites like "AlphaBay" (now gone) or "Dread" (a forum) are where criminals talk.</li>
-            <li><strong>Safety:</strong> Never use your personal PC for this; use a "Virtual Machine" or a dedicated "Clean" laptop.</li>
-            <li><strong>No Google:</strong> You cannot "Google" the dark web. You must use directories like "The Hidden Wiki."</li>
-            <li><strong>Crypto Connection:</strong> Almost all dark web transactions happen in Bitcoin or Monero.</li>
-            <li><strong>Tor Browser:</strong> Looks like Firefox but has a "purple" logo and extra security.</li>
-            <li><strong>Key Rule:</strong> Accessing the dark web is not illegal, but buying things there is.</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>13. Discord Forensics</h2>
-        <ul>
-            <li><strong>What it is:</strong> A chat app used by gamers, but also by hackers and extremist groups for secret communication.</li>
-            <li><strong>Why it’s needed:</strong> Young criminals use Discord because it allows large "Servers" with private voice and text channels.</li>
-            <li><strong>Servers vs. DMs:</strong> A "Server" is a group; "DMs" are private messages.</li>
-            <li><strong>User ID:</strong> Every user has a unique 18-digit ID (e.g., 123456789012345678). This never changes even if they change their name.</li>
-            <li><strong>Investigation Use:</strong> Finding "Raiding" groups that organize cyberattacks.</li>
-            <li><strong>Bot Logs:</strong> Discord servers often use "Bots" to manage users. These bots keep logs of who joined and from which IP.</li>
-            <li><strong>LEO Request:</strong> Discord has a specific portal for police to get subscriber info.</li>
-            <li><strong>General Location:</strong> discord.com.</li>
-            <li><strong>Screen Sharing:</strong> Suspects often "stream" their screen to others while hacking.</li>
-            <li><strong>How to read it:</strong> It's organized into "Channels" like #general, #hacks, #chat.</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>14. Botnet Tracking ("Like Farms")</h2>
-        <ul>
-            <li><strong>What it is:</strong> A network of thousands of "zombie" social media accounts controlled by one person.</li>
-            <li><strong>Why it’s needed:</strong> To identify "Political Misinformation" or "Fake Trends" on Twitter/X.</li>
-            <li><strong>The Pattern:</strong> If 5,000 accounts post the exact same spelling mistake at the exact same second, it’s a botnet.</li>
-            <li><strong>Like Farms:</strong> Physical rooms in countries like China, India, or Vietnam where thousands of phones are rigged to "Like" posts.</li>
-            <li><strong>Investigation Use:</strong> Finding the "Operator" who is being paid to destroy someone's reputation online.</li>
-            <li><strong>Common Clues:</strong> Accounts with no profile pic, random strings of numbers in the handle (e.g., @Rahul12837465), and 0 followers.</li>
-            <li><strong>Botometer:</strong> An OSINT tool that gives a "Score" on how likely an account is to be a bot.</li>
-            <li><strong>API Abuse:</strong> Bots use the "API" to post automatically.</li>
-            <li><strong>Suspension:Reporting these accounts to the platform can stop a fake trend from going viral.</li>
-            <li><strong>Evidence:</strong> You need to show the "Network Map"—how all these fake accounts are connected.</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h2>15. Email Spoofing & SMTP Logs</h2>
-        <ul>
-            <li><strong>What it is:</strong> Making an email look like it came from "bank@sbi.com" when it actually came from a scammer.</li>
-            <li><strong>Full Form:</strong> SMTP (Simple Mail Transfer Protocol).</li>
-            <li><strong>Why it’s needed:</strong> To find the Real Sender of a fake or threatening email.</li>
-            <li><strong>Email Header:</strong> The hidden part of an email. In Gmail, click "Three Dots" -> "Show Original."</li>
-            <li><strong>Received-From:</strong> This line in the header shows the Real IP Address of the computer that sent the mail.</li>
-            <li><strong>X-Mailer:</strong> Shows what software was used (e.g., "PHP Mailer" or "Outlook").</li>
-            <li><strong>SPF/DKIM:</strong> Security checks. If an email fails these, it’s likely "Spoofed" (Fake).</li>
-            <li><strong>Return-Path:</strong> Where the email goes if it bounces. Scammers often forget to hide their real email here.</li>
-            <li><strong>Investigation Use:Tracing a "Bomb Threat" email back to the original server.</li>
-            <li><strong>How to read it:</strong> It looks like a wall of text. Press Ctrl+F and search for Received.</li>
-        </ul>
-    </div>
-
-    <div class="end-slide">
-        <h1>THANK YOU</h1>
-        <hr style="width: 40%; border: 1px solid #ffcc00;">
-        <h2 style="color: white; border: none; margin-top: 20px;">Odisha Police</h2>
-    </div>
-
+    <a href="https://dibakardas.in">
+        Go Now
+    </a>
 </div>
+
+<script>
+let timeLeft = 10;
+const timerEl = document.getElementById("timer");
+
+setInterval(() => {
+    timeLeft--;
+    if (timeLeft >= 0) {
+        timerEl.textContent = timeLeft;
+    }
+}, 1000);
+</script>
 
 </body>
 </html>
